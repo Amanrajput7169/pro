@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import FloatingTechBackground from "@/components/3d/FloatingTechBackground";
 
 export default function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -41,11 +42,13 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex flex-col justify-start px-6 md:px-12 lg:px-24 pt-24 pb-20 md:pt-32 md:pb-32"
+      className="relative min-h-screen flex flex-col justify-start px-6 md:px-12 lg:px-24 pt-24 pb-20 md:pt-32 md:pb-32 overflow-hidden"
     >
-      <div className="z-10 flex flex-col gap-4">
+      <FloatingTechBackground />
+      <div className="z-10 flex flex-col gap-4 pointer-events-none">
         <h1 className="text-[8vw] sm:text-5xl md:text-7xl lg:text-[7vw] leading-[1.1] font-bold tracking-tighter uppercase">
-          <div className="hero-line md:overflow-hidden pb-1">
+          <div className="hero-line md:overflow-hidden pb-1 pointer-events-auto">
+
             <span className="inline-block text-outline-accent text-sm sm:text-xl md:text-2xl lg:text-3xl font-sans normal-case tracking-normal border border-accent rounded-full px-4 sm:px-6 py-1 sm:py-2 mb-2 sm:mb-4">
               Aman Kumar
             </span>
@@ -64,11 +67,11 @@ export default function Hero() {
           </div>
         </h1>
 
-        <p className="hero-subtitle mt-4 md:mt-8 max-w-2xl text-sm sm:text-base md:text-lg text-muted-foreground font-sans leading-relaxed">
+        <p className="hero-subtitle mt-4 md:mt-8 max-w-2xl text-sm sm:text-base md:text-lg text-muted-foreground font-sans leading-relaxed pointer-events-auto">
           Helping businesses create fast, reliable, and user-focused digital products through modern architecture and data-driven solutions.
         </p>
 
-        <div className="hero-cta mt-8 md:mt-12 flex flex-wrap gap-4 md:gap-6 font-sans font-bold uppercase text-[10px] sm:text-xs tracking-wider">
+        <div className="hero-cta mt-8 md:mt-12 flex flex-wrap gap-4 md:gap-6 font-sans font-bold uppercase text-[10px] sm:text-xs tracking-wider pointer-events-auto">
           <a href="#contact" className="px-6 sm:px-8 py-3 sm:py-4 bg-accent text-background rounded-full hover:bg-white transition-colors duration-300">
             Hire Me
           </a>

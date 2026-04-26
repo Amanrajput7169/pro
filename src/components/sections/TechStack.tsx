@@ -5,24 +5,26 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import TechIcon from "@/components/TechIcon";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const techStack = [
   {
     category: "Frontend",
-    technologies: "React.js, Next.js, HTML, CSS, Tailwind",
+    technologies: ["React.js", "Next.js", "HTML", "CSS", "Tailwind", "JavaScript", "TypeScript"],
   },
   {
     category: "Backend",
-    technologies: "Node.js, Express.js",
+    technologies: ["Node.js", "Express.js", "WebSockets"],
   },
   {
     category: "Database",
-    technologies: "MongoDB",
+    technologies: ["MongoDB"],
   },
   {
     category: "Other",
-    technologies: "REST APIs, WebSockets, Performance Optimization",
+    technologies: ["REST APIs", "Performance Optimization"],
   },
 ];
 
@@ -63,7 +65,18 @@ export default function TechStack() {
                 </h3>
               </div>
               <div className="md:w-2/3">
-                <p className="text-lg font-sans text-foreground/80">{stack.technologies}</p>
+                <div className="flex flex-wrap gap-4 md:gap-8">
+                  {stack.technologies.map((tech, i) => (
+                    <div key={i} className="flex items-center gap-2 group/icon">
+                      <div className="p-3 rounded-xl bg-white/5 group-hover/icon:bg-white/10 border border-white/5 group-hover/icon:border-accent/30 transition-all duration-300 shadow-sm group-hover/icon:shadow-accent/20">
+                        <TechIcon name={tech} className="w-8 h-8 md:w-10 md:h-10 transition-transform duration-300 group-hover/icon:scale-110" />
+                      </div>
+                      <span className="text-sm md:text-base font-sans font-medium text-foreground/70 group-hover/icon:text-foreground transition-colors duration-300">
+                        {tech}
+                      </span>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

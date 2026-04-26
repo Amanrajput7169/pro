@@ -6,6 +6,8 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Code, ExternalLink } from "lucide-react";
 
+import TechIcon from "@/components/TechIcon";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const coreProjects = [
@@ -88,9 +90,10 @@ export default function CoreProjects() {
             </div>
             
             <div>
-              <div className="flex flex-wrap gap-2 mb-8">
+              <div className="flex flex-wrap gap-3 mb-8">
                 {project.tags.map((tag, i) => (
-                  <span key={i} className="px-3 py-1 bg-muted text-foreground font-sans text-sm rounded-full">
+                  <span key={i} className="flex items-center gap-2 px-3 py-1.5 bg-muted/50 text-foreground font-sans text-xs font-medium rounded-md border border-white/5 hover:border-accent/30 transition-colors">
+                    <TechIcon name={tag} className="w-4 h-4" />
                     {tag}
                   </span>
                 ))}
