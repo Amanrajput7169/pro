@@ -30,7 +30,7 @@ export default function About() {
     { scope: containerRef }
   );
 
-  const text = "I am a Full Stack Developer focused on building scalable, high-performance web applications and real-world solutions. I have experience working on client projects as well as developing systems that handle real-time data, automation, and performance optimization. I focus on writing clean, maintainable code and delivering solutions that provide real business value.";
+  const text = "I am a Full Stack Developer specialized in engineering scalable, high-performance web applications that drive real business growth. My experience spans across architecting production-level systems that handle real-time data, complex automation workflows, and deep performance optimization. I am committed to technical excellence, writing maintainable code, and delivering impactful digital products that solve complex business challenges.";
 
   return (
     <section ref={containerRef} id="about" className="py-32 px-6 md:px-12 lg:px-24 min-h-screen flex items-center justify-center">

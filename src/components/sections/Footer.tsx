@@ -42,17 +42,27 @@ export default function Footer() {
   return (
     <footer ref={containerRef} id="contact" className="pt-32 pb-12 md:pb-16 px-6 md:px-12 lg:px-24 bg-foreground text-background">
       <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
-        <p className="text-sm uppercase tracking-widest font-sans mb-8">Got a project in mind?</p>
+        <p className="text-sm uppercase tracking-widest font-sans mb-8">Ready to elevate your digital presence?</p>
         <h2 className="text-5xl md:text-7xl lg:text-[8vw] leading-none font-bold uppercase tracking-tighter mb-12">
-          Let&apos;s <br /> <span className="text-outline text-background" style={{ WebkitTextStrokeColor: "var(--background)" }}>Talk</span>
+          Have a project in mind? <br /> <span className="text-outline text-background" style={{ WebkitTextStrokeColor: "var(--background)" }}>Let’s build something impactful together.</span>
         </h2>
         
-        <a 
-          href="mailto:hello@example.com" 
-          className="magnetic-link inline-block py-4 px-12 rounded-full bg-accent text-background font-bold uppercase text-lg hover:bg-white transition-colors duration-300"
-        >
-          Get in touch
-        </a>
+        <div className="flex flex-wrap justify-center gap-6">
+          <a 
+            href="mailto:hello@example.com" 
+            className="magnetic-link inline-block py-4 px-12 rounded-full bg-accent text-background font-bold uppercase text-lg hover:bg-white transition-colors duration-300"
+          >
+            Get in touch
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/aman-kumar-81574a21b" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="magnetic-link inline-block py-4 px-12 rounded-full border border-background text-background font-bold uppercase text-lg hover:bg-accent hover:border-accent transition-colors duration-300"
+          >
+            LinkedIn
+          </a>
+        </div>
       </div>
       
       <div className="mt-20 pt-8 border-t border-background/20 flex flex-col md:flex-row items-center justify-between gap-8 font-sans text-xs sm:text-sm text-background/60">
