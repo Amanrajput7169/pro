@@ -44,28 +44,28 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col justify-start px-6 md:px-12 lg:px-24 pt-24 pb-20 md:pt-32 md:pb-32"
     >
       <div className="z-10 flex flex-col gap-4">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[7vw] leading-[1.1] font-bold tracking-tighter uppercase">
-          <div className="hero-line overflow-hidden pb-1">
-            <span className="inline-block text-outline-accent text-base sm:text-xl md:text-2xl lg:text-3xl font-sans normal-case tracking-normal border border-accent rounded-full px-4 sm:px-6 py-1 sm:py-2 mb-2 sm:mb-4">
+        <h1 className="text-[8vw] sm:text-5xl md:text-7xl lg:text-[7vw] leading-[1.1] font-bold tracking-tighter uppercase">
+          <div className="hero-line md:overflow-hidden pb-1">
+            <span className="inline-block text-outline-accent text-sm sm:text-xl md:text-2xl lg:text-3xl font-sans normal-case tracking-normal border border-accent rounded-full px-4 sm:px-6 py-1 sm:py-2 mb-2 sm:mb-4">
               Aman Kumar
             </span>
           </div>
-          <div className="hero-line overflow-hidden pb-1">
+          <div className="hero-line md:overflow-hidden pb-1">
             <span className="inline-block">Full Stack Developer</span>
           </div>
-          <div className="hero-line overflow-hidden text-outline pb-1">
+          <div className="hero-line md:overflow-hidden text-outline pb-1">
             <span className="inline-block">Building Scalable</span>
           </div>
-          <div className="hero-line overflow-hidden pb-1">
-            <span className="inline-block">Web Applications &</span>
+          <div className="hero-line md:overflow-hidden pb-1">
+            <span className="inline-block">High-Performance</span>
           </div>
-          <div className="hero-line overflow-hidden text-accent pb-1">
-            <span className="inline-block">Data-Driven Systems</span>
+          <div className="hero-line md:overflow-hidden text-accent pb-1">
+            <span className="inline-block">Web Applications</span>
           </div>
         </h1>
 
         <p className="hero-subtitle mt-4 md:mt-8 max-w-2xl text-sm sm:text-base md:text-lg text-muted-foreground font-sans leading-relaxed">
-          I help businesses build fast, reliable, and high-performance web platforms using modern technologies like Next.js, APIs, and automation.
+          Helping businesses create fast, reliable, and user-focused digital products through modern architecture and data-driven solutions.
         </p>
 
         <div className="hero-cta mt-8 md:mt-12 flex flex-wrap gap-4 md:gap-6 font-sans font-bold uppercase text-[10px] sm:text-xs tracking-wider">

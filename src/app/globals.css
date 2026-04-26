@@ -19,11 +19,17 @@
   --muted-foreground: #888888;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), sans-serif;
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {

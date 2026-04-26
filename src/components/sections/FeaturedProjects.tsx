@@ -11,22 +11,22 @@ gsap.registerPlugin(ScrollTrigger);
 const projects = [
   {
     title: "Krisaw India",
-    category: "Business Website",
-    description: "Developed a responsive business website focused on performance, modern UI, and user experience for a growing brand.",
+    category: "Industrial E-commerce",
+    description: "Architected a high-performance industrial platform focused on conversion and streamlined user journeys. Optimized for core web vitals, resulting in superior SEO rankings and a seamless mobile-first experience.",
     image: "/projects/krisawindia.png",
     link: "https://krisawindia.com/",
   },
   {
     title: "Palace Junga Shimla",
-    category: "Hospitality Platform",
-    description: "Built a hospitality website with clean UI, optimized performance, and improved user engagement for hotel bookings.",
+    category: "Hospitality Management",
+    description: "Designed and developed a premium hospitality platform that prioritizes visual storytelling and performance. Implemented advanced caching strategies to ensure rapid load times for a high-traffic booking system.",
     image: "/projects/palacejungashimla.png",
     link: "https://palacejungashimla.com/",
   },
   {
     title: "Shivnem Graphics",
-    category: "Agency Portfolio",
-    description: "Created a business portfolio website with modern design, responsive layout, and optimized loading speed.",
+    category: "Agency Infrastructure",
+    description: "Built a robust agency portfolio emphasizing technical excellence and interactive design. Focused on building a scalable architecture that handles high-resolution asset delivery without compromising performance.",
     image: "/projects/shivnemgraphics.png",
     link: "https://shivnemgraphics.com/",
   },
@@ -92,7 +92,7 @@ export default function FeaturedProjects() {
             <div className="mt-6">
               <div className="flex items-start justify-between">
                 <div>
-                  <h3 className="text-2xl font-bold uppercase">{project.title}</h3>
+                  <h3 className="text-xl md:text-2xl font-bold uppercase">{project.title}</h3>
                   <p className="text-accent mt-1 font-sans text-sm font-bold tracking-wider">{project.category}</p>
                 </div>
                 <a 
