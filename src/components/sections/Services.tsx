@@ -11,22 +11,27 @@ const services = [
   {
     number: "01",
     title: "Full Stack Web Development",
-    description: "Building end-to-end, high-performance web applications utilizing Next.js, React, and Node.js for robust architecture.",
+    description: "Building end-to-end, high-performance web applications utilizing Next.js, React, and Node.js for robust, enterprise-grade architecture.",
   },
   {
     number: "02",
     title: "API Development & Integration",
-    description: "Designing and integrating secure, scalable RESTful APIs and external services to power complex business logic.",
+    description: "Designing and integrating secure, scalable RESTful APIs and external services to power complex business logic and seamless data flow.",
   },
   {
     number: "03",
-    title: "Real-Time Applications",
-    description: "Implementing low-latency WebSockets and event-driven architectures for live chat, dashboards, and real-time data sync.",
+    title: "Real-Time Systems",
+    description: "Implementing low-latency WebSockets and event-driven architectures for live communication, dashboards, and mission-critical data sync.",
   },
   {
     number: "04",
     title: "Performance Optimization",
-    description: "Auditing and optimizing web platforms for lightning-fast load times, SEO, and massive scalability.",
+    description: "Auditing and optimizing web platforms for lightning-fast load times, superior core web vitals, and massive scalability.",
+  },
+  {
+    number: "05",
+    title: "Scalable Web Solutions",
+    description: "Developing future-proof digital products that grow with your business, focusing on maintainability, security, and user experience.",
   },
 ];
 

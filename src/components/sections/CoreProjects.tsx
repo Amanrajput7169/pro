@@ -10,31 +10,31 @@ gsap.registerPlugin(ScrollTrigger);
 
 const coreProjects = [
   {
-    title: "Real-Time Chat Application",
-    description: "Developed a real-time chat system using WebSockets with secure authentication and live messaging.",
+    title: "Secure Real-Time Communication Engine",
+    description: "Developed a mission-critical real-time communication system leveraging bi-directional WebSocket protocols with robust end-to-end encryption and session management.",
     tags: ["WebSockets", "Node.js", "React", "Socket.io"],
     links: {
       code: "#",
       live: "#"
     },
     metrics: [
-      "Supports concurrent users seamlessly",
-      "Ultra-low latency communication",
-      "Secure encrypted data handling",
+      "Handles high-concurrency event loops",
+      "Low-latency message propagation",
+      "Enterprise-grade security protocols",
     ]
   },
   {
-    title: "Crypto Dashboard",
-    description: "Built a complex dashboard displaying real-time cryptocurrency data streams with a highly responsive UI.",
+    title: "Financial Data Streaming Dashboard",
+    description: "Built a high-frequency financial dashboard for real-time cryptocurrency market analysis. Integrated low-latency data streams with advanced visualization for data-driven decision making.",
     tags: ["Next.js", "REST APIs", "TailwindCSS", "Recharts"],
     links: {
       code: "#",
       live: "https://cryptoverseap.netlify.app/"
     },
     metrics: [
-      "Live market data integration",
-      "Optimized UI/UX for all devices",
-      "High-frequency state updates",
+      "Real-time market volatility tracking",
+      "Sub-second data refresh intervals",
+      "Cross-platform responsive architecture",
     ]
   }
 ];

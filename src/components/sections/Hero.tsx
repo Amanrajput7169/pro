@@ -57,15 +57,15 @@ export default function Hero() {
             <span className="inline-block">Building Scalable</span>
           </div>
           <div className="hero-line overflow-hidden pb-1">
-            <span className="inline-block">Web Applications &</span>
+            <span className="inline-block">High-Performance</span>
           </div>
           <div className="hero-line overflow-hidden text-accent pb-1">
-            <span className="inline-block">Data-Driven Systems</span>
+            <span className="inline-block">Web Applications</span>
           </div>
         </h1>
 
         <p className="hero-subtitle mt-4 md:mt-8 max-w-2xl text-sm sm:text-base md:text-lg text-muted-foreground font-sans leading-relaxed">
-          I help businesses build fast, reliable, and high-performance web platforms using modern technologies like Next.js, APIs, and automation.
+          Helping businesses create fast, reliable, and user-focused digital products through modern architecture and data-driven solutions.
         </p>
 
         <div className="hero-cta mt-8 md:mt-12 flex flex-wrap gap-4 md:gap-6 font-sans font-bold uppercase text-[10px] sm:text-xs tracking-wider">
