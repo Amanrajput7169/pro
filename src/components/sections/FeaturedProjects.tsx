@@ -14,18 +14,21 @@ const projects = [
     category: "Business Website",
     description: "Developed a responsive business website focused on performance, modern UI, and user experience for a growing brand.",
     image: "/projects/krisawindia.png",
+    link: "https://krisawindia.com/",
   },
   {
     title: "Palace Junga Shimla",
     category: "Hospitality Platform",
     description: "Built a hospitality website with clean UI, optimized performance, and improved user engagement for hotel bookings.",
     image: "/projects/palacejungashimla.png",
+    link: "https://palacejungashimla.com/",
   },
   {
     title: "Shivnem Graphics",
     category: "Agency Portfolio",
     description: "Created a business portfolio website with modern design, responsive layout, and optimized loading speed.",
     image: "/projects/shivnemgraphics.png",
+    link: "https://shivnemgraphics.com/",
   },
 ];
 
@@ -67,7 +70,12 @@ export default function FeaturedProjects() {
             key={index}
             className={`project-card group relative ${index === 1 ? "md:mt-24 lg:mt-32" : ""} ${index === 2 ? "md:mt-0 lg:mt-16" : ""}`}
           >
-            <div className="relative aspect-[4/5] overflow-hidden bg-muted cursor-pointer rounded-sm">
+            <a 
+              href={project.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="block relative aspect-[4/5] overflow-hidden bg-muted cursor-pointer rounded-sm"
+            >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={project.image}
@@ -79,7 +87,7 @@ export default function FeaturedProjects() {
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-accent rounded-full flex items-center justify-center opacity-0 scale-50 group-hover:opacity-100 group-hover:scale-100 transition-all duration-500 ease-out z-10 pointer-events-none">
                 <span className="text-background font-bold uppercase text-xs">View</span>
               </div>
-            </div>
+            </a>
             
             <div className="mt-6">
               <div className="flex items-start justify-between">
@@ -87,9 +95,14 @@ export default function FeaturedProjects() {
                   <h3 className="text-2xl font-bold uppercase">{project.title}</h3>
                   <p className="text-accent mt-1 font-sans text-sm font-bold tracking-wider">{project.category}</p>
                 </div>
-                <button className="p-3 border border-muted rounded-full group-hover:bg-foreground group-hover:text-background transition-colors duration-300 shrink-0 ml-4">
+                <a 
+                  href={project.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="p-3 border border-muted rounded-full group-hover:bg-foreground group-hover:text-background transition-colors duration-300 shrink-0 ml-4"
+                >
                   <ArrowUpRight className="w-4 h-4" />
-                </button>
+                </a>
               </div>
               <p className="text-muted-foreground font-sans mt-4 text-sm leading-relaxed">
                 {project.description}

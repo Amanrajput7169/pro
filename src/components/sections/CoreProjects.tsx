@@ -13,6 +13,10 @@ const coreProjects = [
     title: "Real-Time Chat Application",
     description: "Developed a real-time chat system using WebSockets with secure authentication and live messaging.",
     tags: ["WebSockets", "Node.js", "React", "Socket.io"],
+    links: {
+      code: "#",
+      live: "#"
+    },
     metrics: [
       "Supports concurrent users seamlessly",
       "Ultra-low latency communication",
@@ -23,6 +27,10 @@ const coreProjects = [
     title: "Crypto Dashboard",
     description: "Built a complex dashboard displaying real-time cryptocurrency data streams with a highly responsive UI.",
     tags: ["Next.js", "REST APIs", "TailwindCSS", "Recharts"],
+    links: {
+      code: "#",
+      live: "https://cryptoverseap.netlify.app/"
+    },
     metrics: [
       "Live market data integration",
       "Optimized UI/UX for all devices",
@@ -88,12 +96,22 @@ export default function CoreProjects() {
                 ))}
               </div>
               <div className="flex gap-4">
-                <button className="flex items-center gap-2 font-sans font-bold text-sm uppercase tracking-wider hover:text-accent transition-colors">
+                <a 
+                  href={project.links.code} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 font-sans font-bold text-sm uppercase tracking-wider hover:text-accent transition-colors"
+                >
                   <Code className="w-4 h-4" /> Code
-                </button>
-                <button className="flex items-center gap-2 font-sans font-bold text-sm uppercase tracking-wider hover:text-accent transition-colors">
+                </a>
+                <a 
+                  href={project.links.live} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="flex items-center gap-2 font-sans font-bold text-sm uppercase tracking-wider hover:text-accent transition-colors"
+                >
                   <ExternalLink className="w-4 h-4" /> Live Demo
-                </button>
+                </a>
               </div>
             </div>
           </div>
