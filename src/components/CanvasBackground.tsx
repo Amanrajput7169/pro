@@ -9,7 +9,7 @@ function ParticleSystem() {
   const pointsRef = useRef<THREE.Points>(null);
 
   // Generate random particles within a sphere
-  const particlesCount = 5000;
+  const particlesCount = typeof window !== "undefined" && window.innerWidth < 768 ? 2000 : 5000;
   const positions = useMemo(() => {
     const pos = new Float32Array(particlesCount * 3);
     for (let i = 0; i < particlesCount; i++) {

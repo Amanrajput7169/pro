@@ -44,7 +44,7 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col justify-start px-6 md:px-12 lg:px-24 pt-24 pb-20 md:pt-32 md:pb-32"
     >
       <div className="z-10 flex flex-col gap-4">
-        <h1 className="text-[10vw] sm:text-[9vw] md:text-[7vw] lg:text-[6vw] leading-[1.1] font-bold tracking-tighter uppercase">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[7vw] leading-[1.1] font-bold tracking-tighter uppercase">
           <div className="hero-line overflow-hidden pb-1">
             <span className="inline-block text-outline-accent text-base sm:text-xl md:text-2xl lg:text-3xl font-sans normal-case tracking-normal border border-accent rounded-full px-4 sm:px-6 py-1 sm:py-2 mb-2 sm:mb-4">
               Aman Kumar

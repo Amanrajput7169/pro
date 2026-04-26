@@ -72,7 +72,7 @@ export default function CoreProjects() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {coreProjects.map((project, index) => (
-          <div key={index} className="core-project-card p-8 md:p-12 border border-muted bg-muted/10 hover:bg-muted/30 transition-colors duration-500 flex flex-col justify-between">
+          <div key={index} className="core-project-card p-6 md:p-12 border border-muted bg-muted/10 hover:bg-muted/30 transition-colors duration-500 flex flex-col justify-between">
             <div>
               <h3 className="text-3xl font-bold uppercase mb-4">{project.title}</h3>
               <p className="text-foreground/80 font-sans mb-8 text-lg">{project.description}</p>
